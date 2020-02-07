@@ -1,0 +1,5 @@
+# Project: ToDo List
+* Finish readme file
+* Do prod build
+* Remove extra zip files
+* Push to Github pages 

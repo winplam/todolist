@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link async href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+    <script src="live.js"></script>
+</head>
+<body>
+<header class="top-banner">
+    <div class="top-banner-left">
+        <i class="material-icons banner-check">playlist_add_check</i>
+        <div class="page-title">ToDo List</div>
+    </div>
+    <div class="top-banner-right">
+        <i class="material-icons banner-right banner-settings" id="settings">settings_applications</i>
+        <div class="settings-dropdown">
+        </div>
+    </div>
+</header>
+<div class="grid-container">
+    <div class="margin-left"></div>
+    <section id="column-left">
+        <div class="add-project-container">
+            <span class="add-project-text" id="add-project-text">Add project</span>
+            <i class="material-icons" id="add-project-button">
+                add_box
+            </i>
+        </div>
+        <form class="project-editor">
+            <div class="project-editor-rectangle"></div>
+            <span>Title</span><br>
+            <input class="edit-project-input" id="new-title-input" maxlength="35" required><br>
+            <span>Color</span><br>
+            <input type="text" class="color-input" id="color-picker" maxlength="7"><br>
+            <div class="palette" id="color-palette"></div>
+            <div class="project-buttons">
+                <input type="submit" class="buttons project-btn" id="save-project-button" value="Save">
+                <button class="buttons project-btn" id="cancel-project-button">Cancel</button>
+                <button class="buttons project-btn" id="delete-project-button">Delete</button>
+            </div>
+            <div class="buttons" id="close-color-palette">Close Color Palette</div>
+        </form>
+        <div id="show-all-tasks">
+            Show All Tasks
+            <i class="material-icons notes-icon" id="show-all-tasks-btn">notes</i>
+        </div>
+        <div id="project-list-container"></div>
+    </section>
+    <section class="right-section">
+        <div class="add-task-container">
+            <span class="add-task-text" id="add-task-text">Add task</span>
+            <i class="material-icons" id="add-task-button">
+                add_box
+            </i>
+        </div>
+        <div id="task-list">
+        </div>
+        <footer>This app was made for a <a href="https://www.theodinproject.com/courses/javascript/lessons/todo-list">Javascript
+            coding assignment</a> for<br>The Oden Project. View the <a href="https://github.com/winplam/todolist">source code</a> on GitHub.
+        </footer>
+    </section>
+    <div class="margin-right"></div>
+    <div class="snackbar"></div>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>
